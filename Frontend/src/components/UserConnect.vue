@@ -254,15 +254,15 @@ export default {
   bottom: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-color: #191A36;
-  background-image: url("https://imgur.com/Uc1dbgP.png");
+  background-color: black;
+  background-image: url("");
   background-position: left;
 }
 
 @media (max-width: 768px){
   .form-structor::after {
 
-    background-image: url("https://imgur.com/rCH8Qud.jpg");
+    background-image: url("");
     background-position: center;
   }
 }
@@ -348,8 +348,8 @@ export default {
   color: rgba(0, 0, 0, 0.4);
 }
 .form-structor .signup .submit-btn {
-  background-color: rgba(77, 33, 41, 1);
-  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 0.7);
   border: 0;
   border-radius: 15px;
   display: block;
@@ -366,7 +366,7 @@ export default {
 }
 .form-structor .signup .submit-btn:hover {
   transition: all 0.3s ease;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(100, 100, 100, 1);
 }
 .form-structor .login {
   position: absolute;
@@ -459,8 +459,8 @@ export default {
   color: rgba(0, 0, 0, 0.4);
 }
 .form-structor .login .center .submit-btn {
-  background-color: var(--darkBordeaux);
-  color: rgba(255, 255, 255, 0.7);
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
   border: 0;
   border-radius: 15px;
   display: block;
@@ -479,7 +479,7 @@ export default {
 
 .form-structor .login .center .submit-btn:hover {
   transition: all 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(100, 100, 100, 0.8);
 
 }
 .form-structor .login.slide-up {

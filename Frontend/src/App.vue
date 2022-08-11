@@ -57,16 +57,8 @@ html, body{
 
 :root
   {
-  --whiteTheme: #7549cc;
-  --whiteText: 	#724f36;
-  --whiteBrown: #d4b9f0;
-  --whiteBordeaux: #9769d2;
-  --whiteBackground: #fdf4c0;
+  --whiteBackground: white;
 
-  --darkTheme: #772330;
-  --darkText: #d8bc94;
-  --darkTextBold: #b08165;
-  --darkBordeaux: #4d2129;
-  --darkBackground: #382129;
+  --darkBackground: black;
   }
 </style>
