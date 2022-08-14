@@ -1,20 +1,23 @@
-# Template connection user all secure with middlewear (captcha and AWP token)
+# Template connection user all secure with middlewear (captcha and AWP token) and realtime Database
 
 Fullstack template app with dependencie includes in .json. Easy deploy thanks to a bash script.
 
 ## Requirements
 [Create mongo account and new cluster](https://www.mongodb.com)
 
+[Create Pusher acount and new channel](https://pusher.com/)
+
 [Create an Heroku account](https://dashboard.heroku.com/)
 
 ### Technologies
 
 - MongoDB API
+- Pusher trigger
 - Vue.js / Vuex
 - Node.js
 - Express.js
 
-### Deploiement on Heroku
+### Deployement on Heroku
 - Heroku
 
 # Settings to do before everythings:
@@ -41,8 +44,34 @@ Go to :
 ### Edit :
 
 ---
-    CLUSERNAME=""
+    CLUSTERNAME=""
     RANDOMMONGONAME=""
+
+## Access to your mongo database in real time with Pusher:
+On pusher create a new channel and copy variable variable keys
+
+Set .env File :
+---
+    cd Backend/.env
+
+### Edit :
+
+---
+    PUSHERAPPID=""
+    PUSHERKEY=""
+    PUSHERSECRET=""
+    PUSHERCLUSTER=""
+
+Go to :
+---
+    cd Frontend/src/components/HomePage.vue
+
+### Edit :
+
+---
+    var pusher = new Pusher('', {
+    cluster: ''
+    });
 
 ## Access to your authorization middlewear :
 Generate on your browser a [random String](https://www.random.org/strings/) and copy paste it here :
